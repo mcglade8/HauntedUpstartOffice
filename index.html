@@ -8,10 +8,12 @@
   </body>
   <script>
   document.addEventListener("DOMContentLoaded", function(event) {
+    while(document.getElementsByTagName('form')[0] === undefined){}
     var thisform = document.getElementsByTagName('form')[0];
     thisform.style.width = '90%';
-    thisform.parentElement.paddingLeft= '0';
-    thisform.parentElement.paddingRight= '0';
+    document.getElementsByTagName('form')[0].parentElement.style.marginLeft="0";
+    document.getElementsByTagName('form')[0].parentElement.style.marginRight="0";
+    document.getElementsByTagName('form')[0].parentElement.style.width="100%";
   });
 </script>
 </html>
