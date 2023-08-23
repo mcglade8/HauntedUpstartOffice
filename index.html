@@ -7,14 +7,14 @@
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfERPn1MeWMMw-aTlTFUbVw83dHTcx2ZK3D1TBzryS2vp49AA/viewform?embedded=true" width="1200" height="3000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </body>
   <script>
-  document.addEventListener("DOMContentLoaded", function(event) {
-    while(document.getElementsByTagName('form')[0] === undefined){}
+  window.onload = (event) => { 
+    //while(document.getElementsByTagName('form')[0] === undefined){}
     //var thisform = document.getElementsByTagName('form')[0];
     //thisform.style.width = '90%';
     document.getElementsByTagName('form')[0].parentElement.style.marginLeft="0";
     document.getElementsByTagName('form')[0].parentElement.style.marginRight="0";
     document.getElementsByTagName('form')[0].parentElement.style.width="100%";
-  });
+  };
 </script>
 </html>
 
